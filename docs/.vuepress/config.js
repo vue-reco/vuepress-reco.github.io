@@ -136,7 +136,7 @@ module.exports = {
     //   placeholder: '填写邮箱可以收到回复提醒哦！',
     //   notify: true,
     //   recordIP: true
-    },
+    // },
     vssueConfig: {
       title: 'vuepress-theme-reco',
       platform: 'github',
