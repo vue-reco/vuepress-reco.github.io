@@ -130,21 +130,21 @@ module.exports = {
     // 项目开始时间
     startYear: '2017',
     // valine 设置
-    valineConfig: {
-      appId: 'jvc9s4BkJYQNOcpsbVTPMePe-gzGzoHsz',
-      appKey: 'Js91M9DfM9vPwVaUj7xdkbxh',
-      placeholder: '填写邮箱可以收到回复提醒哦！',
-      notify: true,
-      recordIP: true
+    // valineConfig: {
+    //   appId: 'jvc9s4BkJYQNOcpsbVTPMePe-gzGzoHsz',
+    //   appKey: 'Js91M9DfM9vPwVaUj7xdkbxh',
+    //   placeholder: '填写邮箱可以收到回复提醒哦！',
+    //   notify: true,
+    //   recordIP: true
     },
-    // vssueConfig: {
-    //   title: 'vuepress-theme-reco',
-    //   platform: 'github',
-    //   owner: 'recoluan',
-    //   repo: 'AGStore-comments',
-    //   clientId: '09037a4ffddaeef6652e',
-    //   clientSecret: 'db1f7582492fb52487b4a935cbddb683272507ef',
-    // },
+    vssueConfig: {
+      title: 'vuepress-theme-reco',
+      platform: 'github',
+      owner: 'recoluan',
+      repo: 'AGStore-comments',
+      clientId: '09037a4ffddaeef6652e',
+      clientSecret: 'db1f7582492fb52487b4a935cbddb683272507ef',
+    },
     GAID: 'UA-149716079-1'
   },
   markdown: {
