@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vuepress-theme-reco个人向优化 | vuepress-theme-reco</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon_vuepress_reco.png">
+    <link rel="mask-icon" href="/icon_vuepress_reco.svg" color="#42b983">
+    <meta name="description" content="一款简洁而优雅的 vuepress 博客 & 文档 主题。">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="author" content="reco_luan">
+    <meta name="keywords" content="vuepress,reco,reco_luan,vuepress-reco,vuepress-theme-reco,theme,blog,主题">
+    <meta name="theme-color" content="#42b983">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icon_vuepress_reco.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/assets/css/0.styles.7ddd739f.css" as="style"><link rel="preload" href="/assets/js/app.009c84f0.js" as="script"><link rel="preload" href="/assets/js/6.8ffba7c4.js" as="script"><link rel="preload" href="/assets/js/1.aceff842.js" as="script"><link rel="preload" href="/assets/js/104.6e96aef2.js" as="script"><link rel="preload" href="/assets/js/20.d742e727.js" as="script"><link rel="prefetch" href="/assets/js/10.67f147fb.js"><link rel="prefetch" href="/assets/js/100.cf6266e9.js"><link rel="prefetch" href="/assets/js/101.b4188b19.js"><link rel="prefetch" href="/assets/js/102.59353e85.js"><link rel="prefetch" href="/assets/js/103.55e0f3ae.js"><link rel="prefetch" href="/assets/js/105.e5f62f8a.js"><link rel="prefetch" href="/assets/js/106.cd72bd65.js"><link rel="prefetch" href="/assets/js/107.dc517f7c.js"><link rel="prefetch" href="/assets/js/108.15b859dd.js"><link rel="prefetch" href="/assets/js/109.6f84b571.js"><link rel="prefetch" href="/assets/js/11.71a76bbb.js"><link rel="prefetch" href="/assets/js/110.6b28e2e2.js"><link rel="prefetch" href="/assets/js/111.84ba488d.js"><link rel="prefetch" href="/assets/js/112.7ac3aa2a.js"><link rel="prefetch" href="/assets/js/113.6300d610.js"><link rel="prefetch" href="/assets/js/114.c7291998.js"><link rel="prefetch" href="/assets/js/12.76475ad5.js"><link rel="prefetch" href="/assets/js/13.dabf7b34.js"><link rel="prefetch" href="/assets/js/14.8c45881b.js"><link rel="prefetch" href="/assets/js/15.cff6219b.js"><link rel="prefetch" href="/assets/js/16.50a37d73.js"><link rel="prefetch" href="/assets/js/17.5a7f8b8c.js"><link rel="prefetch" href="/assets/js/18.4c03bd0f.js"><link rel="prefetch" href="/assets/js/19.fce92168.js"><link rel="prefetch" href="/assets/js/2.0425572a.js"><link rel="prefetch" href="/assets/js/21.756e824a.js"><link rel="prefetch" href="/assets/js/22.932311ac.js"><link rel="prefetch" href="/assets/js/23.9c13cb80.js"><link rel="prefetch" href="/assets/js/24.20a99b6b.js"><link rel="prefetch" href="/assets/js/25.3b731eef.js"><link rel="prefetch" href="/assets/js/26.a71a4704.js"><link rel="prefetch" href="/assets/js/27.56ee8267.js"><link rel="prefetch" href="/assets/js/28.660d7fc0.js"><link rel="prefetch" href="/assets/js/29.1ca5f226.js"><link rel="prefetch" href="/assets/js/30.348619f7.js"><link rel="prefetch" href="/assets/js/31.b4cf105b.js"><link rel="prefetch" href="/assets/js/32.cceaf346.js"><link rel="prefetch" href="/assets/js/33.4c1d0486.js"><link rel="prefetch" href="/assets/js/34.d4259054.js"><link rel="prefetch" href="/assets/js/35.ab22dc9d.js"><link rel="prefetch" href="/assets/js/36.6b324351.js"><link rel="prefetch" href="/assets/js/37.e20a1906.js"><link rel="prefetch" href="/assets/js/38.fe20925e.js"><link rel="prefetch" href="/assets/js/39.4bbdb338.js"><link rel="prefetch" href="/assets/js/40.d6a152a6.js"><link rel="prefetch" href="/assets/js/41.1dd979af.js"><link rel="prefetch" href="/assets/js/42.963a9bbc.js"><link rel="prefetch" href="/assets/js/43.984c8148.js"><link rel="prefetch" href="/assets/js/44.97612129.js"><link rel="prefetch" href="/assets/js/45.21439ddf.js"><link rel="prefetch" href="/assets/js/46.ab370b34.js"><link rel="prefetch" href="/assets/js/47.e91562fc.js"><link rel="prefetch" href="/assets/js/48.f7a4ef72.js"><link rel="prefetch" href="/assets/js/49.3904d76e.js"><link rel="prefetch" href="/assets/js/50.a4753fbe.js"><link rel="prefetch" href="/assets/js/51.c8c6fadf.js"><link rel="prefetch" href="/assets/js/52.20f56297.js"><link rel="prefetch" href="/assets/js/53.dbb08c30.js"><link rel="prefetch" href="/assets/js/54.d6d37ccf.js"><link rel="prefetch" href="/assets/js/55.d961f400.js"><link rel="prefetch" href="/assets/js/56.99bb305a.js"><link rel="prefetch" href="/assets/js/57.c16518fb.js"><link rel="prefetch" href="/assets/js/58.2e81a78b.js"><link rel="prefetch" href="/assets/js/59.27a500bf.js"><link rel="prefetch" href="/assets/js/60.356b9bda.js"><link rel="prefetch" href="/assets/js/61.bf706d16.js"><link rel="prefetch" href="/assets/js/62.6e6676f8.js"><link rel="prefetch" href="/assets/js/63.ff2d555e.js"><link rel="prefetch" href="/assets/js/64.e47c5cff.js"><link rel="prefetch" href="/assets/js/65.a397039a.js"><link rel="prefetch" href="/assets/js/66.3d52e46e.js"><link rel="prefetch" href="/assets/js/67.50375adf.js"><link rel="prefetch" href="/assets/js/68.a61a83e0.js"><link rel="prefetch" href="/assets/js/69.ea4545d8.js"><link rel="prefetch" href="/assets/js/7.e5079e9f.js"><link rel="prefetch" href="/assets/js/70.5b36d479.js"><link rel="prefetch" href="/assets/js/71.26eef622.js"><link rel="prefetch" href="/assets/js/72.99776d72.js"><link rel="prefetch" href="/assets/js/73.bb49fc31.js"><link rel="prefetch" href="/assets/js/74.d62ce268.js"><link rel="prefetch" href="/assets/js/75.40bea377.js"><link rel="prefetch" href="/assets/js/76.e929e274.js"><link rel="prefetch" href="/assets/js/77.db386ad5.js"><link rel="prefetch" href="/assets/js/78.780619fe.js"><link rel="prefetch" href="/assets/js/79.58dfcf82.js"><link rel="prefetch" href="/assets/js/8.5a6e1c55.js"><link rel="prefetch" href="/assets/js/80.cf982d89.js"><link rel="prefetch" href="/assets/js/81.1d66deb5.js"><link rel="prefetch" href="/assets/js/82.fe7b3aa0.js"><link rel="prefetch" href="/assets/js/83.6e264f17.js"><link rel="prefetch" href="/assets/js/84.fb6b8b66.js"><link rel="prefetch" href="/assets/js/85.32291bf7.js"><link rel="prefetch" href="/assets/js/86.11c6c2af.js"><link rel="prefetch" href="/assets/js/87.b8711a19.js"><link rel="prefetch" href="/assets/js/88.1f50576a.js"><link rel="prefetch" href="/assets/js/89.7d4ea986.js"><link rel="prefetch" href="/assets/js/9.8f17af75.js"><link rel="prefetch" href="/assets/js/90.7c61af29.js"><link rel="prefetch" href="/assets/js/91.2f041641.js"><link rel="prefetch" href="/assets/js/92.77261311.js"><link rel="prefetch" href="/assets/js/93.0796e38e.js"><link rel="prefetch" href="/assets/js/94.164c0546.js"><link rel="prefetch" href="/assets/js/95.8c945b74.js"><link rel="prefetch" href="/assets/js/96.3b4b2f3b.js"><link rel="prefetch" href="/assets/js/97.47a804e9.js"><link rel="prefetch" href="/assets/js/98.d24551c6.js"><link rel="prefetch" href="/assets/js/99.9693b316.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.a5095413.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.150dd161.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7ddd739f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>vuepress-theme-reco</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>reco_luan</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">vuepress-theme-reco</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <form id="search-form" role="search" class="algolia-search-wrapper search-box"><i class="iconfont reco-search"></i> <input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-api"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>主题</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/views/1.x/" class="nav-link"><i class="iconfont undefined"></i>
+  1.x
+</a></li><li class="dropdown-subitem"><a href="/views/0.x/" class="nav-link"><i class="iconfont undefined"></i>
+  0.x
+</a></li></ul></li><li class="dropdown-item"><h4>插件</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/views/plugins/index.html" class="nav-link"><i class="iconfont undefined"></i>
+  官方插件
+</a></li><li class="dropdown-subitem"><a href="/views/other/recommend.html" class="nav-link"><i class="iconfont undefined"></i>
+  插件广场
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/views/other/question.html" class="nav-link"><i class="iconfont reco-faq"></i>
+  常见问题
+</a></div><div class="nav-item"><a href="/categories/blog/" class="nav-link"><i class="iconfont reco-blog"></i>
+  博客
+</a></div><div class="nav-item"><a href="/views/other/theme-example.html" class="nav-link"><i class="iconfont reco-category"></i>
+  案例
+</a></div><div class="nav-item"><a href="https://vuepress-theme-reco.recoluan.com/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/views/other/messageBoard.html" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言板
+</a></div><div class="nav-item"><a href="https://github.com/vuepress-reco/vuepress-theme-reco" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      language
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/views/other/reco-optimization.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="iconfont undefined"></i>
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/en/" class="nav-link"><i class="iconfont undefined"></i>
+  English
+</a></li></ul></div></div> <a href="https://github.com/vuepress-reco/vuepress-reco.github.io" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-github"></i>
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/head.png" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    reco_luan
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>9</h3> <h6 data-v-ca798c94>文章</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>4</h3> <h6 data-v-ca798c94>标签</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-api"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>主题</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/views/1.x/" class="nav-link"><i class="iconfont undefined"></i>
+  1.x
+</a></li><li class="dropdown-subitem"><a href="/views/0.x/" class="nav-link"><i class="iconfont undefined"></i>
+  0.x
+</a></li></ul></li><li class="dropdown-item"><h4>插件</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/views/plugins/index.html" class="nav-link"><i class="iconfont undefined"></i>
+  官方插件
+</a></li><li class="dropdown-subitem"><a href="/views/other/recommend.html" class="nav-link"><i class="iconfont undefined"></i>
+  插件广场
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/views/other/question.html" class="nav-link"><i class="iconfont reco-faq"></i>
+  常见问题
+</a></div><div class="nav-item"><a href="/categories/blog/" class="nav-link"><i class="iconfont reco-blog"></i>
+  博客
+</a></div><div class="nav-item"><a href="/views/other/theme-example.html" class="nav-link"><i class="iconfont reco-category"></i>
+  案例
+</a></div><div class="nav-item"><a href="https://vuepress-theme-reco.recoluan.com/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/views/other/messageBoard.html" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言板
+</a></div><div class="nav-item"><a href="https://github.com/vuepress-reco/vuepress-theme-reco" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      language
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/views/other/reco-optimization.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="iconfont undefined"></i>
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/en/" class="nav-link"><i class="iconfont undefined"></i>
+  English
+</a></li></ul></div></div> <a href="https://github.com/vuepress-reco/vuepress-reco.github.io" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-github"></i>
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>vuepress-theme-reco个人向优化</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>reco_luan</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2020
+        </a></span></div></div> <div data-v-2d5f533b><main class="page" style="padding-right:0;"><div class="page-title" style="display:none;"><h1 class="title">vuepress-theme-reco个人向优化</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>会飞的小弋</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2020-07-17</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/views/other/reco-optimization.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><p>## 前言</p> <p>很荣幸被作者大佬邀请谈谈自己的修改心得，也很感谢<strong>午后</strong>大佬能做出如此漂亮的主题。</p> <p>首先说明<strong>Vuepress</strong>的<code>vuepress-theme-reco</code>主题已经很完美了，主要因为我已经有了自己的生活博客<a href="https://lovelijunyi.gitee.io/" target="_blank" rel="noopener noreferrer">小弋の生活馆<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，还缺一个文档类的技术博客，所以为了更加适合自己查阅<strong>技术文档</strong>，对作者的主题进行一点小小的优化（个人向，比较主观）：</p> <ol><li>更换主题到本地后，无法直接通过<strong>npm install</strong>直接更新主题</li> <li>进一步对侧边栏优化，右侧滚动栏优化，字体优化</li> <li>增加各种好玩实用的插件</li> <li>取消了博客页面，直接转跳到文档页面</li> <li>个人向修改，不喜勿喷</li></ol> <p>我的博客：https://lovelijunyi.gitee.io/blog/
+<img src="https://img-blog.csdnimg.cn/20200717170032849.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvd2FyZXlvdTIxMDQ=,size_16,color_FFFFFF,t_70" alt=""></p> <h2 id="更换主题为本地"><a href="#更换主题为本地" class="header-anchor">#</a> 更换主题为本地</h2> <ul><li>与hexo不一样，正常的主题文件会被安装到<code>node_modules</code>文件夹中。如果之前<code>vuepress-theme-reco</code>安装正确的话，可以在<code>node_modules</code>文件夹中找到改文件。所以如果不把主题文件放到本地，我们每次执行<strong>npm install</strong>的时候，新的文件就会把我们魔改过的文件覆盖掉。</li> <li>接着不得不谈一下主题的启动流程：如果config没指定，系统会默认会检查<code>.vuepress/theme</code>，如果还没有就，直接用默认主题。</li> <li>所以只要把下载(或者直接从<code>node_modules</code>中复制)下来的文件夹更名为<strong>theme</strong>，粘贴至 .vuepress文件夹下即可，如果在执行编译过程中，看到<code>tip Apply local theme at xxx\Desktop\blog\.vuepress\theme...</code>相关提示，就说明从theme文件夹启动成功</li> <li>整个目录结构如下</li></ul> <div class="language-lua extra-class"><pre class="language-lua"><code>Dev
+├─── docs
+│   └── <span class="token punctuation">.</span>vuepress   <span class="token operator">//</span> 配置目录
+│   │    ├── public <span class="token operator">//</span> 静态资源
+│   │    ├── theme <span class="token operator">//</span> 主题
+│   │    │   ├── components <span class="token operator">//</span> 组件
+│   │    │   ├── global<span class="token operator">-</span>components <span class="token operator">//</span> 全局组件
+│   │    │   ├── layouts <span class="token operator">//</span> 布局<span class="token punctuation">(</span>包括首页在内<span class="token punctuation">)</span>
+│   │    │   ├── styles <span class="token operator">//</span> 样式
+│   │    │   ├── util <span class="token operator">//</span> 工具
+│   │    │   ├── index<span class="token punctuation">.</span>js <span class="token operator">//</span> 入口配置
+│   │    │   ├── noopModule<span class="token punctuation">.</span>js <span class="token operator">//</span> 依赖注入
+│   │    │   ├── package<span class="token punctuation">.</span>json <span class="token operator">//</span> 主题依赖
+│   │    │   ├── README<span class="token punctuation">.</span>md <span class="token operator">//</span> 主题说明
+│   │    └── config<span class="token punctuation">.</span>js
+│   ├── FAQ     <span class="token operator">//</span> 求索模块
+│   ├── Store   <span class="token operator">//</span> 仓库模块
+│   ├── Thought <span class="token operator">//</span> 随笔模块
+│   └── README<span class="token punctuation">.</span>md   <span class="token operator">//</span> 博客首页
+└── package<span class="token punctuation">.</span>json
+</code></pre></div><h2 id="外挂组件修改"><a href="#外挂组件修改" class="header-anchor">#</a> 外挂组件修改</h2> <p>如果你不满足于主题提供的默认样式，VuePress 提供了一些简单的接口文件，可以让你能够很方便地定制你自己想要的效果，和<strong>hexo外挂组件修改</strong>一样，这类修改<strong>无需改动源码</strong>，上手简单。</p> <h3 id="修改主题颜色"><a href="#修改主题颜色" class="header-anchor">#</a> 修改主题颜色</h3> <p>我这里暂时没有修改，如有需要可以通过配置 <code>.vuepress/styles/palette.styl</code> 来快速修改主题的一些颜色属性。(如果不存在该目录和文件就创建一个)</p> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token comment">// 默认值</span>
+<span class="token variable-declaration"><span class="token variable">$accentColor</span> <span class="token operator">=</span> <span class="token hexcode">#3eaf7c</span>                      <span class="token comment">// 主题颜色</span></span>
+<span class="token variable-declaration"><span class="token variable">$textColor</span> <span class="token operator">=</span> <span class="token hexcode">#2c3e50</span>                        <span class="token comment">// 文本颜色</span></span>
+<span class="token variable-declaration"><span class="token variable">$borderColor</span> <span class="token operator">=</span> <span class="token hexcode">#eaecef</span>                      <span class="token comment">// 边框线颜色</span></span>
+<span class="token variable-declaration"><span class="token variable">$codeBgColor</span> <span class="token operator">=</span> <span class="token hexcode">#282c34</span>                      <span class="token comment">// 代码块背景色</span></span>
+<span class="token variable-declaration"><span class="token variable">$backgroundColor</span> <span class="token operator">=</span> <span class="token hexcode">#ffffff</span>                  <span class="token comment">// 悬浮块背景色</span></span>
+</code></pre></div><h3 id="修改主题样式"><a href="#修改主题样式" class="header-anchor">#</a> 修改主题样式</h3> <p>你可以创建一个 <code>.vuepress/styles/index.styl</code> 文件以方便地添加额外样式。这是一个 Stylus 文件，但你也可以使用正常的 CSS 语法，我的修改如下，主要是改进了文档页面的可读性和操作性：</p> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token selector"><span class="token comment">// 侧边栏样式</span>
+<span class="token comment">// 左侧侧边栏标题</span>
+.sidebar &gt; .sidebar-links &gt; li &gt; a.sidebar-link <span class="token punctuation">{</span></span>
+  <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">1.5</span><span class="token unit">em</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+  <span class="token property-declaration"><span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token number">-1</span><span class="token unit">em</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token comment">// 右侧文章标题导航栏</span>
+a.sidebar-link <span class="token punctuation">{</span></span>
+  <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">16</span><span class="token unit">px</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token comment">// 左侧边栏标题字体大小样式</span>
+.sidebar-heading span<span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">1.2</span><span class="token unit">em</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span></span>
+
+<span class="token punctuation">}</span>
+<span class="token selector">.sidebar-heading.open span<span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+
+
+<span class="token selector"><span class="token comment">// 左侧边栏展开文章的字体大小</span>
+a.sidebar-link.active <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#070808</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">14</span><span class="token unit">px</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token hexcode">#c3d4b7</span><span class="token number">42</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.sidebar-sub-headers a.sidebar-link <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span> <span class="token number">1</span><span class="token unit">rem</span> <span class="token number">0</span> <span class="token number">1</span><span class="token unit">rem</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token comment">// 分组的透明度修改，未生效</span>
+.sidebar-group.is-sub-group &gt; .sidebar-heading:not(.clickable)<span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">opacity</span><span class="token punctuation">:</span> <span class="token number">0.5</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+
+<span class="token selector"><span class="token comment">// 去除左上角标题，作者，标签等</span>
+.page .page-title <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>效果如下</p> <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2Z1ZGFsaWp1bnlpL3BpY3R1cmUtYmVkL2ltZy8yMDIwMDcxNTE3MjA1MS5wbmc?x-oss-process=image/format,png" alt=""></p> <p>其他修改，主要参照<strong>znote大佬</strong>，修改如下(可选)：</p> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token selector">blockquote <span class="token punctuation">{</span></span>
+	<span class="token property-declaration"><span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token color">transparent</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token unit">px</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token unit">rem</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#999</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">border-left</span><span class="token punctuation">:</span> <span class="token number">.25</span><span class="token unit">rem</span> solid <span class="token hexcode">#dfe2e5</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token number">0</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">padding-left</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token unit">rem</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+
+<span class="token selector"><span class="token comment">// tip,warning,danger容器样式</span>
+.custom-block.tip <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#d4d4d4</span><span class="token number">52</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.custom-block.warning <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#ffa16d</span><span class="token number">47</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.custom-block.danger <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#f9b4b4</span><span class="token number">57</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token comment">// details容器样式</span></span>
+ <span class="token selector">summary <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">font-weight</span><span class="token punctuation">:</span> <span class="token number">550</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">16</span><span class="token unit">px</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">0.2</span><span class="token unit">rem</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">padding-top</span><span class="token punctuation">:</span> <span class="token number">11</span><span class="token unit">px</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">padding-bottom</span><span class="token punctuation">:</span> <span class="token number">11</span><span class="token unit">px</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#75826b</span><span class="token number">42</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token unit">px</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+
+<span class="token selector"><span class="token comment">// 时间线样式</span>
+.timeline-wrapper .year <span class="token punctuation">{</span></span>
+  <span class="token property-declaration"><span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">80</span><span class="token unit">px</span> <span class="token number">0</span><span class="token unit">px</span> <span class="token number">20</span><span class="token unit">px</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+  <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">27</span><span class="token unit">px</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.timeline-wrapper .year-wrapper li <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span> <span class="token number">20</span><span class="token unit">px</span> <span class="token number">10</span><span class="token unit">px</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">border-bottom</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token unit">px</span> solid <span class="token hexcode">#999da0</span><span class="token number">6</span><span class="token unit">b</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token hexcode">#c1c1e6</span><span class="token number">26</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token unit">rem</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token number">0</span><span class="token unit">px</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">transition</span><span class="token punctuation">:</span> all <span class="token number">.5</span><span class="token unit">s</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.timeline-wrapper .year-wrapper li:hover <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">transform</span><span class="token punctuation">:</span>  <span class="token func"><span class="token function">translate</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token unit">px</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span></span>
+    <span class="token property-declaration"><span class="token property">transition</span><span class="token punctuation">:</span> all <span class="token number">.5</span><span class="token unit">s</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.timeline-wrapper .year-wrapper li .date <span class="token punctuation">{</span></span>
+  <span class="token property-declaration"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">43</span><span class="token unit">px</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+  <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">13</span><span class="token unit">px</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.timeline-wrapper .year-wrapper li .date:before <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">22</span><span class="token unit">px</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">border</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token unit">px</span> solid <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.timeline-wrapper:after <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token color">skyblue</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.timeline-wrapper .desc:before<span class="token punctuation">,</span> .timeline-wrapper .year:before <span class="token punctuation">{</span></span>
+  <span class="token property-declaration"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token color">cadetblue</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+
+<span class="token selector"><span class="token comment">//主页，评论偏左</span>
+.page<span class="token punctuation">,</span> .password-wrapper-in <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token number">8</span><span class="token unit">rem</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.comments-wrapper <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token number">10</span><span class="token unit">rem</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">#valine .vwrap .vedit #veditor<span class="token punctuation">{</span></span>
+  <span class="token property-declaration"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url('/znote/img/other/comment.png')</span>  </span>
+  <span class="token property-declaration"><span class="token property">background-position</span><span class="token punctuation">:</span> <span class="token number">90</span><span class="token unit">%</span> <span class="token number">60</span><span class="token unit">%</span></span>
+  <span class="token property-declaration"><span class="token property">background-size</span><span class="token punctuation">:</span> <span class="token number">16</span><span class="token unit">rem</span> <span class="token number">10</span><span class="token unit">rem</span></span>
+  <span class="token property-declaration"><span class="token property">background-repeat</span><span class="token punctuation">:</span> no-repeat</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable-declaration"><span class="token variable">$mobileSidebarWidth</span> <span class="token operator">=</span> $sidebarWidth <span class="token operator">*</span> <span class="token number">0.82</span></span>
+
+<span class="token comment">// narrow desktop / iPad</span>
+<span class="token atrule-declaration"><span class="token atrule">@media</span> <span class="token punctuation">(</span>max-width<span class="token punctuation">:</span> $MQNarrow<span class="token punctuation">)</span></span>
+  <span class="token selector">.sidebar</span>
+    <span class="token property-declaration"><span class="token property">font-size</span> <span class="token number">15</span><span class="token unit">px</span></span>
+    <span class="token property-declaration"><span class="token property">width</span> $mobileSidebarWidth <span class="token important">!important</span><span class="token punctuation">;</span></span>
+  <span class="token selector">.page<span class="token punctuation">,</span> .password-wrapper-in</span>
+    <span class="token property-declaration"><span class="token property">margin-left</span> $mobileSidebarWidth <span class="token important">!important</span><span class="token punctuation">;</span></span>
+  <span class="token selector">.comments-wrapper </span>
+    <span class="token property-declaration"><span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token number">2</span><span class="token unit">rem</span> $mobileSidebarWidth<span class="token operator">*</span><span class="token number">1.1</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+
+<span class="token comment">// wide mobile</span>
+<span class="token atrule-declaration"><span class="token atrule">@media</span> <span class="token punctuation">(</span>max-width<span class="token punctuation">:</span> $MQMobile<span class="token punctuation">)</span></span>
+  <span class="token selector">.sidebar</span>
+    <span class="token property-declaration"><span class="token property">top</span> <span class="token number">0</span></span>
+    <span class="token property-declaration"><span class="token property">padding-top</span> $navbarHeight <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">transform</span> <span class="token func"><span class="token function">translateX</span><span class="token punctuation">(</span><span class="token number">-100</span><span class="token unit">%</span><span class="token punctuation">)</span></span></span>
+    <span class="token property-declaration"><span class="token property">transition</span> transform <span class="token number">.2</span><span class="token unit">s</span> ease</span>
+  <span class="token selector">.page<span class="token punctuation">,</span> .password-wrapper-in</span>
+    <span class="token property-declaration"><span class="token property">margin-left</span> <span class="token number">0</span>  <span class="token important">!important</span><span class="token punctuation">;</span></span>
+  <span class="token selector">.comments-wrapper </span>
+    <span class="token property-declaration"><span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+  <span class="token selector">.theme-container</span>
+    <span class="token selector">&amp;.sidebar-open</span>
+      <span class="token selector">.sidebar</span>
+        <span class="token property-declaration"><span class="token property">transform</span> <span class="token func"><span class="token function">translateX</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token important">!important</span><span class="token punctuation">;</span></span></span>
+    <span class="token selector">&amp;.no-navbar</span>
+      <span class="token selector">.sidebar</span>
+        <span class="token property-declaration"><span class="token property">padding-top</span><span class="token punctuation">:</span> <span class="token number">0</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+  <span class="token selector">.password-shadow</span>
+    <span class="token property-declaration"><span class="token property">padding-left</span> <span class="token number">0</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+
+<span class="token comment">// narrow mobile</span>
+<span class="token atrule-declaration"><span class="token atrule">@media</span> <span class="token punctuation">(</span>max-width<span class="token punctuation">:</span> $MQMobileNarrow<span class="token punctuation">)</span></span>
+  <span class="token selector">h1</span>
+    <span class="token property-declaration"><span class="token property">font-size</span> <span class="token number">1.9</span><span class="token unit">rem</span></span>
+  <span class="token selector">.content__default</span>
+    <span class="token selector">div[class*=&quot;language-&quot;]</span>
+      <span class="token property-declaration"><span class="token property">margin</span> <span class="token number">0.85</span><span class="token unit">rem</span> <span class="token number">-1.5</span><span class="token unit">rem</span>  <span class="token important">!important</span><span class="token punctuation">;</span></span>
+      <span class="token property-declaration"><span class="token property">border-radius</span> <span class="token number">0</span></span>
+<span class="token comment">//about me</span>
+<span class="token atrule-declaration"><span class="token atrule">@media</span> <span class="token punctuation">(</span>min-width<span class="token punctuation">:</span> <span class="token punctuation">(</span>$MQMobile <span class="token operator">+</span> <span class="token number">1</span><span class="token unit">px</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
+  <span class="token selector">.theme-container.no-sidebar</span>
+    <span class="token selector">.sidebar</span>
+      <span class="token property-declaration"><span class="token property">display</span> none</span>
+    <span class="token selector">.page<span class="token punctuation">,</span> .password-wrapper-in</span>
+      <span class="token property-declaration"><span class="token property">margin-left</span> <span class="token number">0</span>  <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    <span class="token selector">.comments-wrapper </span>
+      <span class="token property-declaration"><span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token number">2</span><span class="token unit">rem</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+
+<span class="token selector"><span class="token comment">//标签列表样式</span>
+.abstract-item <span class="token punctuation">{</span></span>
+  <span class="token property-declaration"><span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#acdcfd</span><span class="token number">3</span><span class="token unit">d</span> <span class="token important">!important</span><span class="token punctuation">;</span>  </span>
+  <span class="token property-declaration"><span class="token property">transition</span><span class="token punctuation">:</span> all <span class="token number">.5</span><span class="token unit">s</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.abstract-item:hover <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">transform</span><span class="token punctuation">:</span>  <span class="token func"><span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">1.02</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span></span>
+    <span class="token property-declaration"><span class="token property">transition</span><span class="token punctuation">:</span> all <span class="token number">.5</span><span class="token unit">s</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+
+<span class="token selector"><span class="token comment">//滚动条样式</span>
+::-webkit-scrollbar</span>
+  <span class="token property-declaration"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">6</span><span class="token unit">px</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+<span class="token selector"><span class="token comment">/*滚动条的设置*/</span>
+::-webkit-scrollbar-thumb <span class="token punctuation">{</span></span>
+	<span class="token property-declaration"><span class="token property">background-color</span><span class="token punctuation">:</span><span class="token hexcode">#94989c</span><span class="token number">8</span><span class="token unit">c</span> <span class="token important">!important</span><span class="token punctuation">;</span> </span>
+	<span class="token property-declaration"><span class="token property">background-clip</span><span class="token punctuation">:</span>padding-box <span class="token important">!important</span><span class="token punctuation">;</span> </span>
+	<span class="token property-declaration"><span class="token property">-webkit-border-radius</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">em</span> <span class="token important">!important</span><span class="token punctuation">;</span> </span>
+	<span class="token property-declaration"><span class="token property">-moz-border-radius</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">em</span> <span class="token important">!important</span><span class="token punctuation">;</span> </span>
+	<span class="token property-declaration"><span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">em</span> <span class="token important">!important</span><span class="token punctuation">;</span> </span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token comment">/*滚动条凹槽的颜色，还可以设置边框属性 */</span>
+::-webkit-scrollbar-track-piece <span class="token punctuation">{</span></span>
+	<span class="token property-declaration"><span class="token property">background-color</span><span class="token punctuation">:</span><span class="token color">transparent</span> <span class="token important">!important</span><span class="token punctuation">;</span> </span>
+	<span class="token property-declaration"><span class="token property">-webkit-border-radius</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token unit">em</span> <span class="token important">!important</span><span class="token punctuation">;</span> </span>
+	<span class="token property-declaration"><span class="token property">-moz-border-radius</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token unit">em</span> <span class="token important">!important</span><span class="token punctuation">;</span> </span>
+	<span class="token property-declaration"><span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token unit">em</span> <span class="token important">!important</span><span class="token punctuation">;</span> </span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token comment">/*滚动条鼠标移上去*/</span>
+::-webkit-scrollbar-thumb:hover <span class="token punctuation">{</span></span>
+	<span class="token property-declaration"><span class="token property">background-color</span><span class="token punctuation">:</span><span class="token hexcode">#bbb</span> <span class="token important">!important</span><span class="token punctuation">;</span> </span>
+<span class="token punctuation">}</span>
+
+<span class="token selector"><span class="token comment">//navbar字体大小</span>
+.navbar .links</span>
+  <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">15.5</span><span class="token unit">px</span> <span class="token important">!important</span><span class="token punctuation">;</span></span>
+
+<span class="token selector"><span class="token comment">//容器样式</span>
+.theorem</span>
+  <span class="token property-declaration"><span class="token property">margin</span> <span class="token number">1</span><span class="token unit">rem</span> <span class="token number">0</span></span>
+  <span class="token property-declaration"><span class="token property">padding</span> <span class="token number">.1</span><span class="token unit">rem</span> <span class="token number">1.5</span><span class="token unit">rem</span></span>
+  <span class="token property-declaration"><span class="token property">border-radius</span> <span class="token number">0.4</span><span class="token unit">rem</span></span>
+  <span class="token property-declaration"><span class="token property">background-color</span> <span class="token hexcode">#c9daea</span><span class="token number">61</span></span>
+  <span class="token selector">.title</span>
+    <span class="token property-declaration"><span class="token property">font-weight</span> bold</span>
+<span class="token selector">.custom-block</span>
+  <span class="token selector">&amp;.right</span>
+    <span class="token property-declaration"><span class="token property">color</span> <span class="token func"><span class="token function">transparentify</span><span class="token punctuation">(</span>$textColor<span class="token punctuation">,</span> <span class="token number">0.4</span><span class="token punctuation">)</span></span></span>
+    <span class="token property-declaration"><span class="token property">font-size</span> <span class="token number">0.9</span><span class="token unit">rem</span></span>
+    <span class="token property-declaration"><span class="token property">text-align</span> right</span>
+
+<span class="token atrule-declaration"><span class="token atrule">@require</span> <span class="token string">'./markdown-container'</span></span>
+</code></pre></div><p>这里作者还引入了<strong>markdown-container.styl</strong>，需要的自行引入</p> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token selector">.cardListContainer</span>
+  <span class="token property-declaration"><span class="token property">margin</span> <span class="token number">.7</span><span class="token unit">rem</span> <span class="token number">0</span></span>
+  <span class="token selector">&amp;&gt;:not(.card-list)</span>
+    <span class="token property-declaration"><span class="token property">display</span> none</span>
+  <span class="token selector">.card-list</span>
+    <span class="token property-declaration"><span class="token property">margin</span> <span class="token number">-0.35</span><span class="token unit">rem</span></span>
+    <span class="token property-declaration"><span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">flex-wrap</span><span class="token punctuation">:</span> wrap<span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">align-items</span><span class="token punctuation">:</span> flex-start<span class="token punctuation">;</span></span>
+    <span class="token selector">.card-item</span>
+      <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span><span class="token operator">/</span><span class="token number">3</span> <span class="token operator">-</span> <span class="token number">.7</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+      <span class="token property-declaration"><span class="token property">margin</span> auto</span>
+      <span class="token property-declaration"><span class="token property">background</span> <span class="token func"><span class="token function">var</span><span class="token punctuation">(</span><span class="token operator">-</span>-bodyBg<span class="token punctuation">)</span></span></span>
+      <span class="token property-declaration"><span class="token property">border-radius</span> <span class="token number">3</span><span class="token unit">px</span></span>
+      <span class="token property-declaration"><span class="token property">color</span> <span class="token func"><span class="token function">var</span><span class="token punctuation">(</span><span class="token operator">-</span>-textColor<span class="token punctuation">)</span></span></span>
+      <span class="token property-declaration"><span class="token property">display</span> flex </span>
+      <span class="token property-declaration"><span class="token property">box-shadow</span> <span class="token number">1</span><span class="token unit">px</span> <span class="token number">1</span><span class="token unit">px</span> <span class="token number">2</span><span class="token unit">px</span> <span class="token number">0</span> <span class="token func"><span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">.06</span><span class="token punctuation">)</span></span></span>
+      <span class="token selector">&amp;:hover</span>
+        <span class="token property-declaration"><span class="token property">text-decoration</span> none</span>
+        <span class="token selector">img </span>
+          <span class="token property-declaration"><span class="token property">transform</span> <span class="token func"><span class="token function">rotate</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token unit">deg</span><span class="token punctuation">)</span> <span class="token func"><span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">1.1</span><span class="token punctuation">,</span> <span class="token number">1.1</span><span class="token punctuation">)</span></span></span></span>
+          <span class="token property-declaration"><span class="token property">box-shadow</span> <span class="token number">3</span><span class="token unit">px</span> <span class="token number">2</span><span class="token unit">px</span> <span class="token number">7</span><span class="token unit">px</span> <span class="token func"><span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.15</span><span class="token punctuation">)</span></span></span>
+        <span class="token selector">div p</span>
+          <span class="token property-declaration"><span class="token property">text-shadow</span> <span class="token number">3</span><span class="token unit">px</span> <span class="token number">2</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token func"><span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.15</span><span class="token punctuation">)</span></span></span>
+      <span class="token selector">img</span>
+        <span class="token property-declaration"><span class="token property">width</span> <span class="token number">60</span><span class="token unit">px</span></span>
+        <span class="token property-declaration"><span class="token property">height</span> <span class="token number">60</span><span class="token unit">px</span></span>
+        <span class="token property-declaration"><span class="token property">border-radius</span> <span class="token number">50</span><span class="token unit">%</span></span>
+        <span class="token property-declaration"><span class="token property">border</span> <span class="token number">2</span><span class="token unit">px</span> solid <span class="token hexcode">#fff</span></span>
+        <span class="token property-declaration"><span class="token property">margin</span> <span class="token number">1</span><span class="token unit">rem</span></span>
+        <span class="token property-declaration"><span class="token property">margin-right</span> <span class="token number">0</span></span>
+        <span class="token property-declaration"><span class="token property">box-shadow</span> <span class="token number">3</span><span class="token unit">px</span> <span class="token number">2</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token func"><span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.08</span><span class="token punctuation">)</span></span></span>
+        <span class="token property-declaration"><span class="token property">transition</span> all <span class="token number">.4</span><span class="token unit">s</span></span>
+      <span class="token selector">div</span>
+        <span class="token property-declaration"><span class="token property">flex</span> <span class="token number">1</span></span>
+        <span class="token property-declaration"><span class="token property">display</span> inline-block</span>
+        <span class="token property-declaration"><span class="token property">float</span> right </span>
+        <span class="token property-declaration"><span class="token property">padding</span> <span class="token number">1</span><span class="token unit">rem</span> <span class="token number">0</span></span>
+        <span class="token selector">p</span>
+          <span class="token property-declaration"><span class="token property">margin</span> <span class="token number">0</span></span>
+          <span class="token property-declaration"><span class="token property">padding</span> <span class="token number">0</span> <span class="token number">1</span><span class="token unit">rem</span></span>
+          <span class="token property-declaration"><span class="token property">transition</span> text-shadow <span class="token number">.4</span><span class="token unit">s</span></span>
+          <span class="token property-declaration"><span class="token property">text-align</span> center</span>
+        <span class="token selector">.name</span>
+          <span class="token property-declaration"><span class="token property">margin</span> <span class="token number">.2</span><span class="token unit">rem</span> <span class="token number">0</span> <span class="token number">.3</span><span class="token unit">rem</span> <span class="token number">0</span></span>
+        <span class="token selector">.desc</span>
+          <span class="token property-declaration"><span class="token property">font-size</span> <span class="token number">.8</span><span class="token unit">rem</span></span>
+          <span class="token property-declaration"><span class="token property">line-height</span> <span class="token number">1.1</span><span class="token unit">rem</span></span>
+          <span class="token property-declaration"><span class="token property">opacity</span> <span class="token number">.8</span></span>
+          <span class="token property-declaration"><span class="token property">margin-bottom</span> <span class="token number">.2</span><span class="token unit">rem</span></span>
+    <span class="token selector">.card-item.row-1</span>
+      <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span> <span class="token operator">-</span> <span class="token number">.7</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+      <span class="token selector">img</span>
+        <span class="token property-declaration"><span class="token property">margin-left</span> <span class="token number">2</span><span class="token unit">rem</span></span>
+    <span class="token selector">.card-item.row-2</span>
+      <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span><span class="token operator">/</span><span class="token number">2</span> <span class="token operator">-</span> <span class="token number">.7</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+      <span class="token selector">img</span>
+        <span class="token property-declaration"><span class="token property">margin-left</span> <span class="token number">1.5</span><span class="token unit">rem</span></span>
+    <span class="token selector">.card-item.row-3</span>
+      <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span><span class="token operator">/</span><span class="token number">3</span> <span class="token operator">-</span> <span class="token number">.7</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+    <span class="token selector">.card-item.row-4</span>
+      <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span><span class="token operator">/</span><span class="token number">4</span> <span class="token operator">-</span> <span class="token number">.7</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+
+<span class="token selector">.cardImgListContainer</span>
+  <span class="token property-declaration"><span class="token property">margin</span> <span class="token number">1</span><span class="token unit">rem</span> <span class="token number">0</span></span>
+  <span class="token selector">&amp;&gt;:not(.card-list)</span>
+    <span class="token property-declaration"><span class="token property">display</span> none</span>
+  <span class="token selector">.card-list</span>
+    <span class="token property-declaration"><span class="token property">margin</span> <span class="token number">-0.5</span><span class="token unit">rem</span></span>
+    <span class="token property-declaration"><span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">flex-wrap</span><span class="token punctuation">:</span> wrap<span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">align-items</span><span class="token punctuation">:</span> flex-start<span class="token punctuation">;</span></span>
+    <span class="token selector">.card-item</span>
+      <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span><span class="token operator">/</span><span class="token number">3</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+      <span class="token property-declaration"><span class="token property">margin</span> <span class="token number">.5</span><span class="token unit">rem</span></span>
+      <span class="token property-declaration"><span class="token property">background</span> <span class="token func"><span class="token function">var</span><span class="token punctuation">(</span><span class="token operator">-</span>-mainBg<span class="token punctuation">)</span></span></span>
+      <span class="token property-declaration"><span class="token property">border</span> <span class="token number">1</span><span class="token unit">px</span> solid <span class="token func"><span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0.08</span><span class="token punctuation">)</span></span></span>
+      <span class="token property-declaration"><span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box</span>
+      <span class="token property-declaration"><span class="token property">border-radius</span> <span class="token number">3</span><span class="token unit">px</span></span>
+      <span class="token property-declaration"><span class="token property">overflow</span> hidden</span>
+      <span class="token property-declaration"><span class="token property">color</span> <span class="token func"><span class="token function">var</span><span class="token punctuation">(</span><span class="token operator">-</span>-textColor<span class="token punctuation">)</span></span></span>
+      <span class="token property-declaration"><span class="token property">box-shadow</span> <span class="token number">2</span><span class="token unit">px</span> <span class="token number">2</span><span class="token unit">px</span> <span class="token number">10</span><span class="token unit">px</span> <span class="token func"><span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">.04</span><span class="token punctuation">)</span></span></span>
+      <span class="token property-declaration"><span class="token property">display</span> flex </span>
+      <span class="token property-declaration"><span class="token property">flex-direction</span><span class="token punctuation">:</span> column<span class="token punctuation">;</span></span>
+      <span class="token property-declaration"><span class="token property">justify-content</span><span class="token punctuation">:</span> flex-start<span class="token punctuation">;</span></span>
+      <span class="token property-declaration"><span class="token property">align-items</span><span class="token punctuation">:</span> stretch<span class="token punctuation">;</span></span>
+      <span class="token property-declaration"><span class="token property">align-content</span><span class="token punctuation">:</span> stretch<span class="token punctuation">;</span></span>
+      <span class="token property-declaration"><span class="token property">transition</span><span class="token punctuation">:</span> box-shadow <span class="token number">.3</span><span class="token unit">s</span></span>
+      <span class="token selector">&amp;:hover</span>
+        <span class="token property-declaration"><span class="token property">box-shadow</span> <span class="token number">1</span><span class="token unit">px</span> <span class="token number">1</span><span class="token unit">px</span> <span class="token number">20</span><span class="token unit">px</span> <span class="token func"><span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">.07</span><span class="token punctuation">)</span></span></span>
+      <span class="token selector">.box-img</span>
+        <span class="token property-declaration"><span class="token property">overflow</span> hidden</span>
+        <span class="token property-declaration"><span class="token property">position</span> relative</span>
+        <span class="token property-declaration"><span class="token property">background</span> <span class="token hexcode">#000</span></span>
+        <span class="token selector">img</span>
+          <span class="token property-declaration"><span class="token property">display</span> block</span>
+          <span class="token property-declaration"><span class="token property">width</span> <span class="token number">100</span><span class="token unit">%</span></span>
+          <span class="token property-declaration"><span class="token property">height</span> auto</span>
+          <span class="token property-declaration"><span class="token property">transition</span><span class="token punctuation">:</span> all <span class="token number">.3</span><span class="token unit">s</span></span>
+        <span class="token selector">&amp;:hover</span>
+          <span class="token selector">img</span>
+            <span class="token property-declaration"><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token func"><span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">1.1</span><span class="token punctuation">,</span> <span class="token number">1.1</span><span class="token punctuation">)</span></span></span>
+            <span class="token property-declaration"><span class="token property">opacity</span> <span class="token number">.75</span></span>
+      <span class="token selector">a</span>
+        <span class="token property-declaration"><span class="token property">color</span> <span class="token func"><span class="token function">var</span><span class="token punctuation">(</span><span class="token operator">-</span>-textColor<span class="token punctuation">)</span></span></span>
+        <span class="token property-declaration"><span class="token property">transition</span><span class="token punctuation">:</span> color <span class="token number">.3</span><span class="token unit">s</span></span>
+        <span class="token selector">&amp;:hover</span>
+          <span class="token property-declaration"><span class="token property">color</span> $accentColor</span>
+          <span class="token property-declaration"><span class="token property">text-decoration</span> none</span>
+      <span class="token selector">.box-info</span>
+        <span class="token property-declaration"><span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">.8</span><span class="token unit">rem</span> <span class="token number">1</span><span class="token unit">rem</span></span>
+        <span class="token selector">p</span>
+          <span class="token property-declaration"><span class="token property">margin</span> <span class="token number">0</span></span>
+        <span class="token selector">.desc</span>
+          <span class="token property-declaration"><span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">.3</span><span class="token unit">rem</span></span>
+          <span class="token property-declaration"><span class="token property">opacity</span> <span class="token number">.8</span></span>
+          <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">.9</span><span class="token unit">rem</span></span>
+          <span class="token property-declaration"><span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">1.1</span><span class="token unit">rem</span></span>
+      <span class="token selector">.box-footer</span>
+        <span class="token property-declaration"><span class="token property">overflow</span> hidden</span>
+        <span class="token property-declaration"><span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">.8</span><span class="token unit">rem</span> <span class="token number">1</span><span class="token unit">rem</span></span>
+        <span class="token property-declaration"><span class="token property">border-top</span><span class="token punctuation">:</span>  <span class="token number">1</span><span class="token unit">px</span> solid <span class="token func"><span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0.05</span><span class="token punctuation">)</span></span></span>
+        <span class="token selector">img</span>
+          <span class="token property-declaration"><span class="token property">width</span> <span class="token number">1.8</span><span class="token unit">rem</span></span>
+          <span class="token property-declaration"><span class="token property">height</span> <span class="token number">1.8</span><span class="token unit">rem</span></span>
+          <span class="token property-declaration"><span class="token property">border-radius</span> <span class="token number">50</span><span class="token unit">%</span></span>
+          <span class="token property-declaration"><span class="token property">float</span> left</span>
+        <span class="token selector">span </span>
+          <span class="token property-declaration"><span class="token property">line-height</span> <span class="token number">1.8</span><span class="token unit">rem</span></span>
+          <span class="token property-declaration"><span class="token property">float</span> left</span>
+          <span class="token property-declaration"><span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token number">.6</span><span class="token unit">rem</span></span>
+          <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">.8</span><span class="token unit">rem</span></span>
+    <span class="token selector">.card-item.row-1</span>
+      <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+    <span class="token selector">.card-item.row-2</span>
+      <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span><span class="token operator">/</span><span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+    <span class="token selector">.card-item.row-3</span>
+      <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span><span class="token operator">/</span><span class="token number">3</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+    <span class="token selector">.card-item.row-4</span>
+      <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span><span class="token operator">/</span><span class="token number">4</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+
+<span class="token selector">.theme-mode-dark</span>
+  <span class="token selector">.cardImgListContainer</span>
+    <span class="token selector">.card-list</span>
+      <span class="token selector">.card-item</span>
+        <span class="token property-declaration"><span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token func"><span class="token function">var</span><span class="token punctuation">(</span><span class="token operator">-</span>-borderColor<span class="token punctuation">)</span></span></span>
+        <span class="token selector">.box-footer</span>
+           <span class="token property-declaration"><span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token func"><span class="token function">var</span><span class="token punctuation">(</span><span class="token operator">-</span>-borderColor<span class="token punctuation">)</span></span></span>
+           
+<span class="token comment">// 卡片列表的响应</span>
+<span class="token atrule-declaration"><span class="token atrule">@media</span> <span class="token punctuation">(</span>max-width<span class="token punctuation">:</span> <span class="token number">900</span><span class="token unit">px</span><span class="token punctuation">)</span> </span>
+  <span class="token selector">.cardListContainer</span>
+    <span class="token selector">.card-list</span>
+      <span class="token selector">.card-item.row-4</span>
+        <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span><span class="token operator">/</span><span class="token number">3</span> <span class="token operator">-</span> <span class="token number">.7</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+  <span class="token selector">.cardImgListContainer</span>
+    <span class="token selector">.card-list</span>
+      <span class="token selector">.card-item.row-4</span>
+        <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span><span class="token operator">/</span><span class="token number">3</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+
+<span class="token atrule-declaration"><span class="token atrule">@media</span> <span class="token punctuation">(</span>max-width<span class="token punctuation">:</span> <span class="token number">720</span><span class="token unit">px</span><span class="token punctuation">)</span> </span>
+  <span class="token selector">.cardListContainer</span>
+    <span class="token selector">.card-list</span>
+      <span class="token selector">.card-item.row-3<span class="token punctuation">,</span> .card-item.row-4</span>
+        <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span><span class="token operator">/</span><span class="token number">2</span> <span class="token operator">-</span> <span class="token number">.7</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+        <span class="token selector">img</span>
+          <span class="token property-declaration"><span class="token property">margin-left</span> <span class="token number">1.5</span><span class="token unit">rem</span></span>
+  <span class="token selector">.cardImgListContainer</span>
+    <span class="token selector">.card-list</span>
+      <span class="token selector">.card-item.row-3<span class="token punctuation">,</span> .card-item.row-4</span>
+        <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span><span class="token operator">/</span><span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+        
+<span class="token atrule-declaration"><span class="token atrule">@media</span> <span class="token punctuation">(</span>max-width<span class="token punctuation">:</span> <span class="token number">500</span><span class="token unit">px</span><span class="token punctuation">)</span> </span>
+  <span class="token selector">.cardListContainer</span>
+    <span class="token selector">.card-list</span>
+      <span class="token selector">.card-item.row-1<span class="token punctuation">,</span> .card-item.row-2<span class="token punctuation">,</span> .card-item.row-3<span class="token punctuation">,</span> .card-item.row-4</span>
+        <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span> <span class="token operator">-</span> <span class="token number">.7</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+        <span class="token selector">img</span>
+          <span class="token property-declaration"><span class="token property">margin-left</span> <span class="token number">1.5</span><span class="token unit">rem</span></span>
+  <span class="token selector">.cardImgListContainer</span>
+    <span class="token selector">.card-list</span>
+      <span class="token selector">.card-item.row-1<span class="token punctuation">,</span> .card-item.row-2<span class="token punctuation">,</span> .card-item.row-3<span class="token punctuation">,</span> .card-item.row-4</span>
+        <span class="token property-declaration"><span class="token property">width</span> <span class="token func"><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token unit">%</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token unit">rem</span><span class="token punctuation">)</span></span></span>
+</code></pre></div><p><em><strong>是否可以将颜色与样式写在同一个文件？</strong></em></p> <p><strong>不可以</strong>将颜色与样式写在同一个文件中，VuePress 会先解析 <code>palette.styl</code> 中的全局变量，之后作用于主题的各个样式中，最后才解析 <code>index.styl</code> ，以覆盖主题默认的样式。</p> <h3 id="引用脚本与样式"><a href="#引用脚本与样式" class="header-anchor">#</a> 引用脚本与样式</h3> <h4 id="操作说明"><a href="#操作说明" class="header-anchor">#</a> 操作说明</h4> <p>这个操作类似butterfly主题中的<strong>inject</strong>，你可以通过配置 <code>.vuepress/config.js</code> 中的 <code>head</code> 来引入脚本与样式。</p> <p>通过外挂css和js来对主题样式曾铁，例如点击效果，花瓣雨等等特效。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  head<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;link&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">&quot;stylesheet&quot;</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">&quot;https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;script&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> src<span class="token operator">:</span> <span class="token string">&quot;scripts/demo.js&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>比如上面的配置就会被解析为</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scripts/demo.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>关于 <code>head</code> 的详细配置说明请参考<a href="https://v1.vuepress.vuejs.org/zh/config/#head" target="_blank" rel="noopener noreferrer">官方文档 head 配置<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h4 id="引入鼠标点击效果"><a href="#引入鼠标点击效果" class="header-anchor">#</a> 引入鼠标点击效果</h4> <p>在<code>.vuepress\public\js</code>文件夹下创建<code>MouseClickEffect.js</code>文件，填入以下代码</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> a_idx <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">getRandom</span><span class="token punctuation">(</span><span class="token parameter">max<span class="token punctuation">,</span> min</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>max <span class="token operator">-</span> min <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> min<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">jQuery</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">$</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;body&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token string">&quot;富强&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;民主&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;文明&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;和谐&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;自由&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;平等&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;公正&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;法治&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;爱国&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;敬业&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;诚信&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;友善&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> $i <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;&lt;span/&gt;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>a_idx<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        a_idx <span class="token operator">=</span> <span class="token punctuation">(</span>a_idx <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> a<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+        <span class="token keyword">var</span> x <span class="token operator">=</span> e<span class="token punctuation">.</span>pageX<span class="token punctuation">,</span>
+            y <span class="token operator">=</span> e<span class="token punctuation">.</span>pageY<span class="token punctuation">;</span>
+        $i<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            <span class="token string">&quot;z-index&quot;</span><span class="token operator">:</span> <span class="token number">999999999999999999999999999999999999999999999999999999999999999999999</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;top&quot;</span><span class="token operator">:</span> y <span class="token operator">-</span> <span class="token number">20</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;left&quot;</span><span class="token operator">:</span> x<span class="token punctuation">,</span>
+            <span class="token string">&quot;position&quot;</span><span class="token operator">:</span> <span class="token string">&quot;absolute&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;font-weight&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bold&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;color&quot;</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">rgb(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">getRandom</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">getRandom</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">getRandom</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">)</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+            <span class="token string">&quot;user-select&quot;</span><span class="token operator">:</span> <span class="token string">'none'</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;cursor&quot;</span><span class="token operator">:</span> <span class="token string">'default'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;body&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>$i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        $i<span class="token punctuation">.</span><span class="token function">animate</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                <span class="token string">&quot;top&quot;</span><span class="token operator">:</span> y <span class="token operator">-</span> <span class="token number">180</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;opacity&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token number">1500</span><span class="token punctuation">,</span>
+            <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                $i<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>然后在主题配置文件<code>config.js</code>下的<code>head</code>引入以上js，这里的jquery必须引入，鼠标点击代码才能生效</p> <div class="language-js extra-class"><pre class="language-js"><code>  head<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// 网页标签栏图标</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/vuepress/favicon.ico'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 移动栏优化</span>
+    <span class="token punctuation">[</span><span class="token string">'meta'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'viewport'</span><span class="token punctuation">,</span> content<span class="token operator">:</span> <span class="token string">'width=device-width,initial-scale=1,user-scalable=no'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 引入jquery</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;script&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascript&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text/javascript&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;src&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 引入鼠标点击脚本</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;script&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascript&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text/javascript&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;src&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/js/MouseClickEffect.js&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+</code></pre></div><h3 id="文章中引入样式和脚本"><a href="#文章中引入样式和脚本" class="header-anchor">#</a> 文章中引入样式和脚本</h3> <p>有时，你可以只想在当前页面应用一些 <code>JavaScript</code> 或者 <code>CSS</code>，在这种情况下，你可以直接在 <code>Markdown</code> 文件中使用原生的 或者 标签，它们将会从编译后的 HTML 文件中提取出来，并作为生成的 Vue 单文件组件的和标签。</p> <p><strong>输入</strong></p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>demo<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$style.example<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">module</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+<span class="token selector">.example</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #41b883<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  props<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'slot-key'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>$style<span class="token punctuation">.</span>example<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">'这个块是被内联的脚本渲染的，样式也采用了内联样式。'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><strong>输出</strong></p> <p>这个块是被内联的脚本渲染的，样式也采用了内联样式。</p> <h2 id="推荐插件类"><a href="#推荐插件类" class="header-anchor">#</a> 推荐插件类</h2> <h3 id="我的插件配置"><a href="#我的插件配置" class="header-anchor">#</a> 我的插件配置</h3> <blockquote><p>所有插件必须要用<strong>中括号包起来</strong>，别问为啥，吃过苦头😵</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token comment">// 流程图插件</span>
+    <span class="token punctuation">[</span><span class="token string">'flowchart'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 标签加强</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;vuepress-plugin-boxx&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 动态标题</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;dynamic-title&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        showIcon<span class="token operator">:</span> <span class="token string">&quot;vuepress/smile.ico&quot;</span><span class="token punctuation">,</span>
+        showText<span class="token operator">:</span> <span class="token string">&quot;(/≧▽≦/)欢迎帅哥美女！&quot;</span><span class="token punctuation">,</span>
+        hideIcon<span class="token operator">:</span> <span class="token string">&quot;vuepress/cry.ico&quot;</span><span class="token punctuation">,</span>
+        hideText<span class="token operator">:</span> <span class="token string">&quot;(●—●)呜呜，不要走嘛！！&quot;</span><span class="token punctuation">,</span>
+        recoverTime<span class="token operator">:</span> <span class="token number">2000</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token comment">// 更新刷新插件</span>
+      <span class="token punctuation">[</span><span class="token string">'@vuepress/pwa'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        serviceWorker<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        updatePopup<span class="token operator">:</span> <span class="token punctuation">{</span>
+            message<span class="token operator">:</span> <span class="token string">&quot;发现新内容可用&quot;</span><span class="token punctuation">,</span>
+            buttonText<span class="token operator">:</span> <span class="token string">&quot;刷新&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 代码复制弹窗插件</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;vuepress-plugin-nuggets-style-copy&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      copyText<span class="token operator">:</span> <span class="token string">&quot;复制代码&quot;</span><span class="token punctuation">,</span>
+      tip<span class="token operator">:</span> <span class="token punctuation">{</span>
+          content<span class="token operator">:</span> <span class="token string">&quot;复制成功!&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 音乐插件</span>
+    <span class="token punctuation">[</span><span class="token string">'meting'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token comment">//metingApi: &quot;https://meting.sigure.xyz/api/music&quot;,</span>
+        meting<span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 网易</span>
+          server<span class="token operator">:</span> <span class="token string">&quot;netease&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 读取歌单</span>
+          type<span class="token operator">:</span> <span class="token string">&quot;playlist&quot;</span><span class="token punctuation">,</span>
+          mid<span class="token operator">:</span> <span class="token string">&quot;696441716&quot;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>          
+        <span class="token comment">// 不配置该项的话不会出现全局播放器</span>
+        aplayer<span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 吸底模式</span>
+          fixed<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          mini<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token comment">// 自动播放</span>
+          autoplay<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token comment">// 歌曲栏折叠</span>
+          listFolded<span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token comment">// 颜色</span>
+          theme<span class="token operator">:</span> <span class="token string">'#f9bcdd'</span><span class="token punctuation">,</span>
+          <span class="token comment">// 播放顺序为随机</span>
+          order<span class="token operator">:</span> <span class="token string">'random'</span><span class="token punctuation">,</span>
+          <span class="token comment">// 初始音量</span>
+          volume<span class="token operator">:</span> <span class="token number">0.1</span><span class="token punctuation">,</span>
+          <span class="token comment">// 关闭歌词显示</span>
+          lrcType<span class="token operator">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        mobile <span class="token operator">:</span><span class="token punctuation">{</span>
+          <span class="token comment">// 手机端去掉cover图</span>
+          cover<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token comment">/* 弹窗公告插件
+    [
+      &quot;@vuepress-yard/vuepress-plugin-window&quot;
+    ], */</span>
+    <span class="token comment">/* 音乐插件   
+    [&quot;@vuepress-reco/vuepress-plugin-bgm-player&quot;,
+          {
+            audios: [
+              // 网络文件示例
+              {
+                name: '年轮',
+                artist: '张碧晨',
+                url: 'https://cdn.jsdelivr.net/gh/fudalijunyi/cdn/MP3/年轮.mp3',
+                cover: 'https://cdn.jsdelivr.net/gh/fudalijunyi/picture-bed/img/20200715154924.png'
+              }
+            ] ,
+            // 自动缩小
+            autoShrink:true ,
+            // 悬浮窗模式，吸边
+            shrinkMode: 'float' ,
+            // 悬浮窗位置
+            floatStyle:{ bottom: '10px', 'z-index': '999999' },
+
+          }],*/</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h3 id="音乐插件"><a href="#音乐插件" class="header-anchor">#</a> 音乐插件</h3> <p>目前音乐插件有两种：</p> <ol><li><a href="https://github.com/vuepress-reco/vuepress-plugin-bgm-player" target="_blank" rel="noopener noreferrer">bgm-player<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，一款简洁易用的音乐插件，优势是好看，其他一无是处了🙂</li> <li><a href="https://www.npmjs.com/package/vuepress-plugin-music-bar" target="_blank" rel="noopener noreferrer">music-bar<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，一个程序猿自己开发的插件，除本地，网络音频之外还支持从平台歌单获取链接(目前仅支持网易云音乐)，缺点是丑了点，支持一下这位老哥👯</li> <li><a href="https://github.com/moefyit/vuepress-plugin-meting" target="_blank" rel="noopener noreferrer">meting<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，​在hexo上就一直用的插件，功能强大，配置丰富，目前应该最大强大的音乐插件了，我用的就是这个，强推👍，还支持在markdown中直接插入，操作如下</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;Meting server=&quot;netease&quot;
+        type=&quot;playlist&quot;
+        mid=&quot;2539599584&quot;
+        :lrc-type=&quot;3&quot;/&gt;
+</code></pre></div><p>这里再推荐一个音乐外链网：http://music.xf1433.com/</p> <h3 id="趣味标题插件"><a href="#趣味标题插件" class="header-anchor">#</a> 趣味标题插件</h3> <p>这个在hexo已经很熟悉了，主要在标签栏当时选中和离开页面时会有变化</p> <h4 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> i vuepress-plugin-dynamic-title -D
+</code></pre></div><h4 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h4> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">&quot;dynamic-title&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        showIcon<span class="token operator">:</span> <span class="token string">&quot;/favicon.ico&quot;</span><span class="token punctuation">,</span>
+        showText<span class="token operator">:</span> <span class="token string">&quot;(/≧▽≦/)咦！又好了！&quot;</span><span class="token punctuation">,</span>
+        hideIcon<span class="token operator">:</span> <span class="token string">&quot;/failure.ico&quot;</span><span class="token punctuation">,</span>
+        hideText<span class="token operator">:</span> <span class="token string">&quot;(●—●)喔哟，崩溃啦！&quot;</span><span class="token punctuation">,</span>
+        recoverTime<span class="token operator">:</span> <span class="token number">2000</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="boxx插件"><a href="#boxx插件" class="header-anchor">#</a> Boxx插件</h3> <p>参考：https://zpj80231.gitee.io/znote/views/front-end/vuepress-plugin-boxx.html</p> <p>可以为博客文章自动随机添加名人名言或其他，可自定义样式和内容</p> <h4 id="安装-2"><a href="#安装-2" class="header-anchor">#</a> 安装</h4> <ul><li>在文件<code>package.json</code>中的<code>devDependencies</code>下加入<code>&quot;vuepress-plugin-boxx&quot;: &quot;0.0.7&quot;</code>：</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;vuepress-plugin-boxx&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.0.7&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>在 vuepress 的<code>config.js</code>中配置<code>plugins</code>：</li></ul> <div class="language-json extra-class"><pre class="language-json"><code>plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;vuepress-plugin-boxx&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span>
+</code></pre></div><ul><li>在<code>package.json</code>目录下执行命令：<code>npm install</code></li> <li>正常启动项目，接着如下使用即可</li></ul> <h4 id="使用-2"><a href="#使用-2" class="header-anchor">#</a> 使用</h4> <ul><li>引入：只需在你想要插入的地方加入<code>&lt;Boxx/&gt;</code>即可（如顶部所示）</li> <li>内容：默认随机展示名人名句，支持自定义</li> <li>样式：有三种样式，默认为 tip 样式，支持自定义</li> <li>注意：除<code>&lt;Boxx/&gt;</code>这个标签是必须外，标签属性均为可选，所有标签属性会在下文中详细介绍</li></ul> <h4 id="默认样式"><a href="#默认样式" class="header-anchor">#</a> 默认样式</h4> <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2Z1ZGFsaWp1bnlpL3BpY3R1cmUtYmVkL2ltZy8yMDIwMDcxNDE0NDkwMC5wbmc?x-oss-process=image/format,png" alt=""></p> <h4 id="自定义标题和内容"><a href="#自定义标题和内容" class="header-anchor">#</a> 自定义标题和内容</h4> <ul><li>如果默认的名人名句不满足需求的话，自定义只需指定两个属性<code>title</code>和<code>content</code>的值</li></ul> <table><thead><tr><th>Name</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>title</td> <td>String</td> <td>要展示的<code>title</code>的内容，支持html标签</td></tr> <tr><td>content</td> <td>String</td> <td>要展示的<code>content</code>的内容，支持html标签</td></tr></tbody></table> <ul><li>当然你也可以只输入<code>title</code>或<code>content</code>，如下：</li></ul> <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2Z1ZGFsaWp1bnlpL3BpY3R1cmUtYmVkL2ltZy8yMDIwMDcxNDE0NTA1My5wbmc?x-oss-process=image/format,png" alt=""></p> <h4 id="自定义样式"><a href="#自定义样式" class="header-anchor">#</a> 自定义样式</h4> <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2Z1ZGFsaWp1bnlpL3BpY3R1cmUtYmVkL2ltZy8yMDIwMDcxNDE0NTIwMS5wbmc?x-oss-process=image/format,png" alt=""></p> <ul><li>可以通过以下几个属性实现</li></ul> <table><thead><tr><th style="text-align:left;">Name</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td style="text-align:left;">blockStyle</td> <td>Object</td> <td>整体块元素的样式</td></tr> <tr><td style="text-align:left;">titleStyle</td> <td>Object</td> <td>只针对<code>title</code>的样式</td></tr> <tr><td style="text-align:left;">contentStyle</td> <td>Object</td> <td>只针对<code>content</code>的样式</td></tr> <tr><td style="text-align:left;">changeTime</td> <td>Number</td> <td>以毫秒值为单位的动态变化时间，顶部为例</td></tr></tbody></table> <p>需要注意的是：属性值传输的对象只能通过<code>v-bind:</code>绑定来实现</p> <ul><li>以下是对如上样式的示例，在Markdown中这样书写即可：</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>marquee<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>Boxx <span class="token operator">:</span>blockStyle<span class="token operator">=</span><span class="token string">&quot;blockStyle&quot;</span>  <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>Boxx type<span class="token operator">=</span><span class="token string">&quot;warning&quot;</span> <span class="token operator">:</span>blockStyle<span class="token operator">=</span><span class="token string">&quot;titleStyle&quot;</span> <span class="token operator">:</span>titleStyle<span class="token operator">=</span><span class="token string">&quot;titleStyle&quot;</span> changeTime<span class="token operator">=</span><span class="token string">&quot;1000&quot;</span> title<span class="token operator">=</span><span class="token string">&quot;我是一个大大的且变化的 title&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>Boxx type<span class="token operator">=</span><span class="token string">&quot;danger&quot;</span> <span class="token operator">:</span>blockStyle<span class="token operator">=</span><span class="token string">&quot;contentStyle&quot;</span> <span class="token operator">:</span>contentStyle<span class="token operator">=</span><span class="token string">&quot;contentStyle&quot;</span> content<span class="token operator">=</span><span class="token string">&quot;我是一个小小的&lt;br&gt;&lt;marquee&gt;content&lt;/marquee&gt;&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>marquee<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+	<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+		<span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token punctuation">{</span>
+				blockStyle<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string">'background'</span><span class="token operator">:</span><span class="token string">'#eee'</span><span class="token punctuation">,</span><span class="token string">'color'</span><span class="token operator">:</span><span class="token string">'red'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                titleStyle<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string">'margin-right'</span><span class="token operator">:</span> <span class="token string">'10%'</span><span class="token punctuation">,</span><span class="token string">'font-size'</span><span class="token operator">:</span><span class="token string">'16px'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                contentStyle<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string">'margin-right'</span><span class="token operator">:</span> <span class="token string">'20%'</span><span class="token punctuation">,</span><span class="token string">'font-size'</span><span class="token operator">:</span><span class="token string">'10px'</span><span class="token punctuation">,</span>
+                               <span class="token string">&quot;margin-top&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1rem&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;margin-bottom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.4rem&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><h3 id="pwa插件"><a href="#pwa插件" class="header-anchor">#</a> PWA插件</h3> <h4 id="安装-3"><a href="#安装-3" class="header-anchor">#</a> 安装</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -D @vuepress/plugin-pwa
+</code></pre></div><h4 id="使用-3"><a href="#使用-3" class="header-anchor">#</a> 使用</h4> <p>本选项开启了一个用于刷新内容的弹窗。这个弹窗将会在站点有内容更新时显示出来，并提供了一个 <code>refresh</code> 按钮，允许用户立即刷新内容。</p> <blockquote><p>如果没有“刷新”按钮，则只有在所有的 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clients" target="_blank" rel="noopener noreferrer">Clients<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 被关闭后，新的 Service Worker 才会处于活动状态。这意味着用户在关闭你网站的所有标签之前无法看到新内容。但是 <code>refresh</code> 按钮会立即激活新的 Service Worker。</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">[</span><span class="token string">'@vuepress/pwa'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        serviceWorker<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        updatePopup<span class="token operator">:</span> <span class="token punctuation">{</span>
+            message<span class="token operator">:</span> <span class="token string">&quot;发现新内容可用&quot;</span><span class="token punctuation">,</span>
+            buttonText<span class="token operator">:</span> <span class="token string">&quot;刷新&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+</code></pre></div><h3 id="复制弹窗插件"><a href="#复制弹窗插件" class="header-anchor">#</a> 复制弹窗插件</h3> <h4 id="安装-4"><a href="#安装-4" class="header-anchor">#</a> 安装</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -D vuepress-plugin-nuggets-style-copy
+</code></pre></div><h4 id="使用-4"><a href="#使用-4" class="header-anchor">#</a> 使用</h4> <div class="language-js extra-class"><pre class="language-js"><code>    <span class="token punctuation">[</span><span class="token string">&quot;vuepress-plugin-nuggets-style-copy&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      copyText<span class="token operator">:</span> <span class="token string">&quot;复制代码&quot;</span><span class="token punctuation">,</span>
+      tip<span class="token operator">:</span> <span class="token punctuation">{</span>
+          content<span class="token operator">:</span> <span class="token string">&quot;复制成功!&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h3 id="公告弹窗插件"><a href="#公告弹窗插件" class="header-anchor">#</a> 公告弹窗插件</h3> <h4 id="演示"><a href="#演示" class="header-anchor">#</a> 演示</h4> <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2Z1ZGFsaWp1bnlpL3BpY3R1cmUtYmVkL2ltZy8yMDIwMDcxNTIyNDU1MC5wbmc?x-oss-process=image/format,png" alt=""></p> <h4 id="下载"><a href="#下载" class="header-anchor">#</a> 下载</h4> <p>https://www.npmjs.com/package/@vuepress-yard/vuepress-plugin-window</p> <h2 id="修改源码"><a href="#修改源码" class="header-anchor">#</a> 修改源码</h2> <p>不到<strong>迫不得已</strong>还是不要修改源码，我主要是因为使用分组的侧边栏后，如果嵌套的内容标题下，不加这个<strong>path</strong>参数(如果加了每次点侧边栏标题都会转跳，非常难受)，颜色就会偏淡，通过上文中<code>index.styl</code>无论如何也不能加深</p> <div class="language-js extra-class"><pre class="language-js"><code>            children<span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    title<span class="token operator">:</span> <span class="token string">'Matplotlib'</span><span class="token punctuation">,</span>   <span class="token comment">// 必要的</span>
+                    <span class="token comment">//path: '',  // 可选的, 标题的跳转链接，应为绝对路径且必须存在</span>
+                    collapsable<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 可选的, 默认值是 true,</span>
+                    children<span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token string">'Python/Matplotlib/Matplotlib绘图指南'</span><span class="token punctuation">,</span>
+                        <span class="token string">'webc/01.Requests使用技巧'</span><span class="token punctuation">,</span>
+                        <span class="token string">'webc/02.数据存入Excel'</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">]</span>
+</code></pre></div><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2Z1ZGFsaWp1bnlpL3BpY3R1cmUtYmVkL2ltZy8yMDIwMDcxMTE3NDAxOC5wbmc?x-oss-process=image/format,png" alt=""></p> <p>通过全局搜索，终于找到在源码文件<code>\xxx\blog\node_modules\vuepress-theme-reco\components\SidebarGroup.vue</code>中发现问题，罪魁祸首就是这个<code>opacity 0.5</code>，致此，将其改成1即可，虽然简单，但是对于有页面强迫症的我，确实是极大的舒适。</p> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token selector">.sidebar-group</span>
+  <span class="token property-declaration"><span class="token property">background</span> <span class="token func"><span class="token function">var</span><span class="token punctuation">(</span><span class="token operator">-</span>-background-color<span class="token punctuation">)</span></span></span>
+  <span class="token selector">.sidebar-group</span>
+    <span class="token property-declaration"><span class="token property">padding-left</span> <span class="token number">0.5</span><span class="token unit">em</span></span>
+  <span class="token selector">&amp;:not(.collapsable)</span>
+    <span class="token selector">.sidebar-heading:not(.clickable)</span>
+      <span class="token property-declaration"><span class="token property">cursor</span> auto</span>
+      <span class="token property-declaration"><span class="token property">color</span> <span class="token func"><span class="token function">var</span><span class="token punctuation">(</span><span class="token operator">-</span>-text-color<span class="token punctuation">)</span></span></span>
+  <span class="token selector"><span class="token comment">// refine styles of nested sidebar groups</span>
+  &amp;.is-sub-group</span>
+    <span class="token property-declaration"><span class="token property">padding-left</span> <span class="token number">0</span></span>
+    <span class="token selector">&amp; &gt; .sidebar-heading</span>
+      <span class="token property-declaration"><span class="token property">font-size</span> <span class="token number">0.95</span><span class="token unit">em</span></span>
+      <span class="token property-declaration"><span class="token property">line-height</span> <span class="token number">1.4</span></span>
+      <span class="token property-declaration"><span class="token property">font-weight</span> normal</span>
+      <span class="token property-declaration"><span class="token property">padding-left</span> <span class="token number">2</span><span class="token unit">rem</span></span>
+      <span class="token selector">&amp;:not(.clickable)</span>
+        <span class="token property-declaration"><span class="token property">opacity</span> <span class="token number">0.5</span></span>
+    <span class="token selector">&amp; &gt; .sidebar-group-items</span>
+      <span class="token property-declaration"><span class="token property">padding-left</span> <span class="token number">1</span><span class="token unit">rem</span></span>
+      <span class="token selector">&amp; &gt; li &gt; .sidebar-link</span>
+        <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">0.95</span><span class="token unit">em</span><span class="token punctuation">;</span></span>
+</code></pre></div><h2 id="参考资料"><a href="#参考资料" class="header-anchor">#</a> 参考资料</h2> <p>znote：https://zpj80231.gitee.io/znote/views/front-end/vuepress-plugin-boxx.html
+vuepress-theme-reco：https://vuepress-theme-reco.recoluan.com/</p></div> <footer class="page-edit" style="display:none;"><div class="edit-link"><a href="https://github.com/vuepress-reco/vuepress-reco.github.io/edit/gh-pages-source/docs/views/other/reco-optimization.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">7/17/2020, 10:19:02 AM</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----><!----></div></div>
+    <script src="/assets/js/app.009c84f0.js" defer></script><script src="/assets/js/6.8ffba7c4.js" defer></script><script src="/assets/js/1.aceff842.js" defer></script><script src="/assets/js/104.6e96aef2.js" defer></script><script src="/assets/js/20.d742e727.js" defer></script>
+  </body>
+</html>
